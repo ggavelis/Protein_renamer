@@ -1,21 +1,11 @@
 # Protein_renamer
 [python | ETE_toolkit]
 Tools to add phylogeny-ready names (including accession, genus, species, lineage &amp; taxid) to protein fastas from:
-* genbank (script 1)
-* supplemenary files accompanying genome papers (script 2)
-* from SRA reads that have subsequently been assembled and AA-predicted in Trinity and TransDecoder. (script 3)
+* rename_from_SRA.py. (SRA reads that have been assembled in Trinity and AA-predicted in TransDecoder)
+* rename_from_genbank.py
+* rename_from_supp_data.py
 
-
-# Purpose
-To be useful in our phylogenies, I need each protein's seqid to include its species, genus, lineage, taxid, and accession number so that they can be used by Phylopipe (e.g. to detect horizontal gene transfer). This notebook has scripts to rename sequences from each of three input protein sets: <br>
-
-* Part I: AAs I assembled from the SRA (Trinity > TransDecoder)
-* Part II: AAs with generic genbank headers.
-* Part III: AAs with custom headers from genome papers.
-
-The improved seqids provide both evolutionary context and provenance of each protein (i.e. info to map each protein back to its respective transcript.) I also update the genus/species names using ETE toolkit.
-
-### Format for the new SeqIDs:
+# About the SeqID format:
 #### A.
 **Full seqid** Example:<br><br>
 \>SRR7816690_10015c0g1i1p1-158475-Pfiesteria_sp-Dinophyceae<br><br>
