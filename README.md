@@ -1,5 +1,6 @@
 # Protein_renamer
-[python | ETE_toolkit]
+python | ETE_toolkit
+
 Tools to add phylogeny-ready names (including accession, genus, species, lineage &amp; taxid) to protein fastas from:
 * rename_from_SRA.py. (SRA reads that have been assembled in Trinity and AA-predicted in TransDecoder)
 * rename_from_genbank.py
